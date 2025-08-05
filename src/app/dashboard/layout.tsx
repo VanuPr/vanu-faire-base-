@@ -4,7 +4,7 @@ import { SidebarProvider, SidebarInset } from '@/components/ui/sidebar'
 import { SidebarNav } from '@/components/sidebar-nav'
 import { ProtectedLayout } from '@/context/auth-context';
 
-export default function AuthenticatedLayout({
+export default function DashboardLayout({
   children,
 }: Readonly<{
   children: React.ReactNode
