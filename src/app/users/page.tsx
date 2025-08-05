@@ -2,7 +2,6 @@ import UserManagement from "@/app/users/components/user-management";
 import { Suspense } from "react";
 import { Skeleton } from "@/components/ui/skeleton";
 import { Card, CardHeader, CardTitle, CardContent, CardDescription } from "@/components/ui/card";
-import AuthenticatedLayout from "../dashboard/layout";
 
 function UserManagementSkeleton() {
     return (
@@ -32,7 +31,6 @@ function UserManagementSkeleton() {
 
 export default function UsersPage() {
   return (
-    <AuthenticatedLayout>
       <div className="space-y-8">
         <div>
           <h1 className="text-3xl font-bold tracking-tight">Account Control</h1>
@@ -44,6 +42,5 @@ export default function UsersPage() {
           <UserManagement />
         </Suspense>
       </div>
-    </AuthenticatedLayout>
   );
 }
